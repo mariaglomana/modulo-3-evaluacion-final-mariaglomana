@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/App.css';
 import Header from './Header';
 import getDataFromApi from '../services/data';
+import CharacterList from './CharacterList';
 
 
 class App extends React.Component {
@@ -20,6 +21,13 @@ class App extends React.Component {
 
   }
 
+  //render methods
+
+  renderCharacterList() {
+    return (
+      <CharacterList characters={this.state.characters} />
+    );
+  }
 
   render() {
     console.log(this.state);
@@ -31,8 +39,8 @@ class App extends React.Component {
 
         <main className="App-main">
           {/*           
-{this.renderSearch()}
-{this.renderList()} */}
+{this.renderSearch()} */}
+          {this.renderCharacterList()}
         </main>
       </div>
     );
