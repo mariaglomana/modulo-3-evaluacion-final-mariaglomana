@@ -1,12 +1,12 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const CharacterDetail = props => {
     const { image, name, status, species, origin, episodes } = props.character;
 
     return (
         <React.Fragment>
-            {/* <Link to="/">Volver</Link> */}
+            <Link to="/">Volver</Link>
             <div className="character-detail__wrapper">
                 <img className="card__image" src={image} alt={`${name} avatar`} style={{ height: "25vh" }} />
                 <h2 className="detail-name">{name}</h2>
