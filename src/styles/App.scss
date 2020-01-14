@@ -1,7 +1,6 @@
-@import 'vendors/normalize.scss';
+@import 'vendor/normalize';
 @import 'core/variables';
 @import 'core/mixins';
-@import 'layout/mediaqueries';
 
 .App {
     min-height: 100vh;
@@ -53,8 +52,8 @@
         background-color: $carrot;
         color: white;
         margin: 9px;
-        height: 176px;
-        width: 130px;
+        height: 264px;
+        width: 195px;
     }
 }
 
@@ -119,7 +118,8 @@
         }
        
     }
-
-    
    
 }
+
+@import 'layout/mediaqueries';
+

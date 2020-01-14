@@ -4,7 +4,37 @@
 
 @include for-desktop-up {
     .App{
-        height: 100vh;
-        padding: 25px 40px; 
+        padding: 25px 40px;
+        font-size: 24px;
     }
+
+    .char-detail {
+        &__back-link {
+            right: -836px;
+
+            &--btn {
+                padding: 22px;
+                border-radius: 12px;
+            }
+        }
+        
+        
+        &__card {
+            flex-direction: row;
+            width: 50vw;
+            height: 50vh;
+            &--image {
+                padding: 0;
+                margin: auto 20px;
+            }
+            &--text {
+                margin: auto 30px;
+            }
+            &--name {
+                margin: 17px 0; 
+            }
+        }
+    }
+
+
 }
