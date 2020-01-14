@@ -1,0 +1,10 @@
+@include for-tablet-up{
+    
+}
+
+@include for-desktop-up {
+    .App{
+        height: 100vh;
+        padding: 25px 40px; 
+    }
+}

@@ -1,23 +1,28 @@
 @import 'vendors/normalize.scss';
+@import 'core/variables';
+@import 'core/mixins';
+@import 'layout/mediaqueries';
 
 .App {
-    background-color: white;
-    font-family: 'Ibarra Real Nova', serif;   
-    font-size: 18px; 
-    height: 100%;
-    width: 100vw;
+    min-height: 100vh;
+    padding: 28px 30px; 
+    background-color: $wet-asphalt;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px; 
+    
 
     &-header {
         // height: 18vh;
         display: flex;
         justify-content: center;
+        &__logo{
+            height: 16vh;
+        }
     } 
 
     &-main {
-        // height: 82vh;
-        margin: 30px; 
-        width: 100vw;
-        height: 1200px;
+        min-height: 60vh;
+      
 
     }
 }
@@ -29,41 +34,92 @@
         margin: 20px;
     }
     &__input-text {
-
+        background-color: $midnight-blue;
+        border: solid 2px $emerald;
+        color: $clouds;
+        font-weight: bold;
+        padding-left: 9px;
+        font-size: 16px;
     }
 }   
 
 .char-list {
     &__wrapper {
         display: flex;
-        flex-flow: row-wrap;
-
+        flex-flow: wrap;
+        justify-content: center;
     }
     &__item{
-        background-color: cornflowerblue;
+        background-color: $carrot;
         color: white;
-        margin: 5px;
-        height: 82px;
-        width: 60px;
+        margin: 9px;
+        height: 176px;
+        width: 130px;
     }
 }
 
 .card {
 
     &__image {
-
+        // background-size: cover;
+        width: 100%;
+        // max-width: 50px;
     }
-    &__name {
-        font-weight: bold;
-    }
-    &__species {
-
-    }
-}
-
-.detail-descr{
+    &__text {
+        margin: 5px;
+        &--name {
+            font-weight: bold;
+        }
+        &--species {
     
-    &__bold {
-        font-weight: bold;
+        }
     }
-}    
+    
+}
+.char-detail{
+    &__wrapper {
+        min-height: inherit;
+
+    }
+    &__back-link {
+        display: inline-block;
+        margin: 10px;
+        height: 1vh;
+        position: relative;
+        right: -216px;
+        bottom: -6px;
+        &--btn {
+            background-color: $carrot;
+            color: white;
+            padding: 14px;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+    }
+
+    &__card{
+        background-color: $nephritis;
+        color: $clouds;
+        width: 70vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--image {
+            padding: 30px;
+            padding-bottom: 0;
+            height: 35vh;
+        }
+        &--text {
+            margin: 15px 30px;
+        }
+        &--name{
+            margin: 8px 0;
+        }
+       
+    }
+
+    
+   
+}

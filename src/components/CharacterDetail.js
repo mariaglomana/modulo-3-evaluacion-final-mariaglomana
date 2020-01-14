@@ -5,17 +5,21 @@ const CharacterDetail = props => {
     const { image, name, status, species, origin, episodes } = props.character;
 
     return (
-        <React.Fragment>
-            <Link to="/">Volver</Link>
-            <div className="character-detail__wrapper">
-                <img className="card__image" src={image} alt={`${name} avatar`} style={{ height: "25vh" }} />
-                <h2 className="detail-name">{name}</h2>
-                <p className="detail-descr"><span className="detail-descr__bold">Status:</span>{status}</p>
-                <p className="detail-descr"><span className="detail-descr__bold">Species:</span>{species}</p>
-                <p className="detail-descr"><span className="detail-descr__bold">Origin:</span>{origin}</p>
-                <p className="detail-descr"><span className="detail-descr__bold">Episodes:</span>{episodes}</p>
+        <div className="char-detail__wrapper">
+            <Link className="char-detail__back-link" to="/">
+                <div className="char-detail__back-link--btn">Volver</div>
+            </Link>
+            <div className="char-detail__card">
+                <img className="char-detail__card--image" src={image} alt={`${name} avatar`} />
+                <div className="char-detail__card--text">
+                    <h2 className="char-detail__card--name">{name}</h2>
+                    <p><span className="typo-bold">Status: </span>{status}</p>
+                    <p><span className="typo-bold">Species: </span>{species}</p>
+                    <p><span className="typo-bold">Origin: </span>{origin}</p>
+                    <p><span className="typo-bold">Episodes: </span>{episodes}</p>
+                </div>
             </div>
-        </React.Fragment>
+        </div>
     )
 }
 

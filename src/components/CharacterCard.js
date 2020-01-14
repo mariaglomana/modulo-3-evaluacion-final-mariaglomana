@@ -2,12 +2,21 @@ import React from 'react';
 
 const CharacterCard = props => {
     const { name, species, image } = props.character;
+    // let imageStyle = {
+    //     backgroundImage: "url(" + { image } + ")",
+    //     backgroundSize: "cover",
+    // }
     return (
         <div className="card">
-            <img className="card__image" src={image} alt={`${name} avatar`} style={{ height: "12vh" }} />
-            <p className="card__name">{name}</p>
-            <p className="card__species">{species}</p>
-        </div>
+            {/* <div className="card__image" style={imageStyle}></div> */}
+            <img className="card__image" src={image} alt={`${name} avatar`}
+            // style={{ height: "12vh" }}
+            />
+            <div className="card__text">
+                <p className="card__text--name">{name}</p>
+                <p className="card__text--species">{species}</p>
+            </div>
+        </div >
     );
 };
 
