@@ -9,19 +9,6 @@ const formatAllChars = charItem => {
     };
 };
 
-// const formatSelectedChar = charItem => {
-//     const numEpisodes = charItem.episode.length;
-//     return {
-//         name: charItem.name,
-//         id: charItem.id,
-//         image: charItem.image,
-//         species: charItem.species,
-//         origin: charItem.origin.name,
-//         status: charItem.status,
-//         episodes: numEpisodes
-//     };
-// };
-
 const getAllCharsFromApi = () => {
     return fetch(ENDPOINT)
         .then(response => response.json())
@@ -31,8 +18,6 @@ const getAllCharsFromApi = () => {
 const getSelCharFromApi = (id) => {
     return fetch(ENDPOINT + id)
         .then(response => response.json())
-    // .then(data => data.map(formatSelectedChar));
 };
-
 
 export { getAllCharsFromApi, getSelCharFromApi };

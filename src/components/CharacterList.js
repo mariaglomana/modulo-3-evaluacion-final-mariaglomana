@@ -2,9 +2,7 @@ import React from 'react';
 import CharacterCard from './CharacterCard';
 import { Link } from 'react-router-dom';
 
-
 const CharacterList = props => {
-    //console.log(props);
     return (
         <ul className="char-list__wrapper">
             {props.characters

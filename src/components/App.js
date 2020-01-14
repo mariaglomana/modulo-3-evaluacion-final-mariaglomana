@@ -6,9 +6,6 @@ import { getAllCharsFromApi, getSelCharFromApi } from '../services/data';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
 import Search from './Search';
-//import logo from '../images/logo.png';
-
-
 
 class App extends React.Component {
   constructor(props) {
@@ -40,7 +37,6 @@ class App extends React.Component {
       .then(characters => {
         this.setState({ characters: characters });
       });
-
   }
 
   getSelCharFromApi(id) {
@@ -69,8 +65,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state);
-
     return (
       <div className="App">
         <Header />
