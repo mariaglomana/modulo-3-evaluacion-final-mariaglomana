@@ -8,7 +8,6 @@
     background-color: $wet-asphalt;
     font-family: 'Nunito', sans-serif;
     font-size: 14px; 
-    
 
     &-header {
         // height: 18vh;
@@ -21,8 +20,6 @@
 
     &-main {
         min-height: 60vh;
-      
-
     }
 }
 
@@ -69,9 +66,6 @@
         &--name {
             font-weight: bold;
         }
-        &--species {
-    
-        }
     }
     
 }
@@ -115,10 +109,8 @@
         }
         &--name{
             margin: 8px 0;
-        }
-       
-    }
-   
+        }       
+    }   
 }
 
 @import 'layout/mediaqueries';

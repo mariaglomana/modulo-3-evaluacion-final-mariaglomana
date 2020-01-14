@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const CharacterDetail = props => {
@@ -22,6 +23,16 @@ const CharacterDetail = props => {
         </div>
     )
 }
+
+CharacterDetail.propTypes = {
+    name: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+    image: PropTypes.string,
+    status: PropTypes.string.isRequired,
+    origin: PropTypes.string.isRequired,
+    species: PropTypes.string.isRequired,
+    episodes: PropTypes.number.isRequired,
+};
 
 export default CharacterDetail;
 
