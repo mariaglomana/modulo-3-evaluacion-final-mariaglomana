@@ -7,6 +7,8 @@ const formatCharItem = charItem => {
         id: charItem.id,
         image: charItem.image,
         species: charItem.species,
+        origin: charItem.origin.name,
+        status: charItem.status,
         episodes: numEpisodes
     };
 };

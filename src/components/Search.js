@@ -8,14 +8,13 @@ const Search = props => {
     const handleSearchText = event => {
         props.handleSearchText(event.target.value);
     }
-    return <form onSubmit={handleSearchSubmit}>
-        <label htmlFor="search" className="form__label">
-        </label>
+    return <form onSubmit={handleSearchSubmit} className="search__form">
+        <label htmlFor="search" />
         <input
             type="text"
             id="search"
             name="search"
-            className="form__input-text"
+            className="search__input-text"
             ref={props.searchText}
             onChange={handleSearchText} />
     </form>

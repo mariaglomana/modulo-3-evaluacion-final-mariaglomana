@@ -1,1 +1,69 @@
 @import 'vendors/normalize.scss';
+
+.App {
+    background-color: white;
+    font-family: 'Ibarra Real Nova', serif;   
+    font-size: 18px; 
+    height: 100%;
+    width: 100vw;
+
+    &-header {
+        // height: 18vh;
+        display: flex;
+        justify-content: center;
+    } 
+
+    &-main {
+        // height: 82vh;
+        margin: 30px; 
+        width: 100vw;
+        height: 1200px;
+
+    }
+}
+
+.search {
+    &__form {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    &__input-text {
+
+    }
+}   
+
+.char-list {
+    &__wrapper {
+        display: flex;
+        flex-flow: row-wrap;
+
+    }
+    &__item{
+        background-color: cornflowerblue;
+        color: white;
+        margin: 5px;
+        height: 82px;
+        width: 60px;
+    }
+}
+
+.card {
+
+    &__image {
+
+    }
+    &__name {
+        font-weight: bold;
+    }
+    &__species {
+
+    }
+}
+
+.detail-descr{
+    
+    &__bold {
+        font-weight: bold;
+    }
+}    
